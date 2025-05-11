@@ -1,0 +1,20 @@
+{
+  "extName": {
+    "message": "Extension Manager / Backup"
+  },
+  "extDesc": {
+    "message": "Toggle ON/OFF, remove, back up, and import extensions instantly—no need to open the settings page."
+  },
+  "expBtn": {
+    "message": "Backup"
+  },
+  "impBtn": {
+    "message": "Import"
+  },
+  "sltFile": {
+    "message": "Select JSON file"
+  },
+  "note": {
+    "message": "If any extension is missing, its Chrome Web Store page will open in a new tab. After import, click 'Add to Chrome' on that page."
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "extName": {
+    "message": "扩展管理/备份"
+  },
+  "extDesc": {
+    "message": "快速切换、删除、备份或导入扩展，无需打开设置页面。"
+  },
+  "expBtn": {
+    "message": "备份"
+  },
+  "impBtn": {
+    "message": "导入"
+  },
+  "sltFile": {
+    "message": "选择 JSON 文件"
+  },
+  "note": {
+    "message": "如有未安装的扩展，将打开其 Chrome 商店页面。导入完成后点击“添加至 Chrome”。"
+  }
+}

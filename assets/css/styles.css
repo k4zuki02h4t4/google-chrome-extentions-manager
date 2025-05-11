@@ -1,0 +1,164 @@
+body {
+  width: 420px;
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+button {
+  background-color: #1976d2;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: #1565c0;
+}
+
+input[type="file"] {
+  display: none;
+}
+
+li {
+  padding: 10px 16px;
+  border-bottom: 1px solid #e0e0e0;
+  background-color: #fff;
+}
+
+li:hover {
+  background-color: #f1f1f1;
+}
+
+.toggle-switch {
+  align-items: center;
+  position: relative;
+  width: 40px;
+  height: 20px;
+}
+
+.toggle-switch input {
+  display: none;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  background-color: #ccc;
+  border-radius: 20px;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  transition: 0.4s;
+}
+
+.slider::before {
+  position: absolute;
+  content: "";
+  height: 14px;
+  width: 14px;
+  left: 3px;
+  bottom: 3px;
+  background-color: white;
+  border-radius: 50%;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: #4caf50;
+}
+
+input:checked + .slider::before {
+  transform: translateX(20px);
+}
+
+#controls {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 12px;
+  align-items: center;
+  padding: 12px 16px;
+  background-color: #ffffff;
+  border-bottom: 1px solid #ddd;
+}
+
+#import-section {
+  display: none;
+  padding: 0 16px 12px;
+}
+
+#import-label {
+  display: inline-block;
+  margin-top: 8px;
+  padding: 6px 12px;
+  background-color: #e0e0e0;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+#note {
+  font-size: 12px;
+  color: #666;
+  margin-top: 8px;
+}
+
+#progress {
+  width: 100%;
+  display: none;
+  margin-top: 10px;
+}
+
+/* --- Extension List Enhanced Layout --- */
+#extension-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+.extension-item {
+  display: grid;
+  grid-template-columns: 32px 1fr 40px 24px;
+  column-gap: 12px;
+  align-items: center;
+  padding: 10px 16px;
+  border-bottom: 1px solid #e0e0e0;
+  background-color: #fff;
+}
+
+.extension-icon {
+  align-self: baseline;
+  width: 32px;
+  height: 32px;
+}
+
+.extension-info {
+}
+
+.extension-name {
+  font-weight: bold;
+}
+
+.extension-description {
+  font-size: 12px;
+  color: #666;
+}
+
+.remove-button {
+  align-items: center;
+  background: none;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  padding: 0;
+}
+
+.remove-button:hover {
+  background: none;
+}

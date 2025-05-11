@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Extension Manager</title>
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+  <div id="controls">
+    <button id="backup-btn" data-i18n-text="expBtn"></button>
+    <button id="import-btn" data-i18n-text="impBtn"></button>
+  </div>
+  <div id="import-section">
+    <label for="import" id="import-label" data-i18n-text="sltFile"></label>
+    <input type="file" id="import" accept="application/json">
+    <progress id="progress" value="0" max="100"></progress>
+    <p id="note" data-i18n-text="note"></p>
+  </div>
+  <ul id="extension-list"></ul>
+  <script src="assets/js/popup.js"></script>
+</body>
+</html>
