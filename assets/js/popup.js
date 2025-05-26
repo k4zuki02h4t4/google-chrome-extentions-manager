@@ -20,8 +20,15 @@ document.addEventListener("DOMContentLoaded", async () => {
   const importSection = document.getElementById("import-section");
   const progress = document.getElementById("progress");
 
+  const collator = new Intl.Collator(undefined, {
+    sensitivity: 'base',
+    numeric: true,
+    ignorePunctuation: true,
+  });
   const extensions = await chrome.management.getAll();
   const userExtensions = extensions.filter(ext => ext.type === "extension" && ext.id !== chrome.runtime.id);
+
+  userExtensions.sort((a, b) => collator.compare(a.name, b.name));
 
   const storeEndpoint = "https://chrome.google.com/webstore/detail";
   const backupData = userExtensions.map(ext => ({
